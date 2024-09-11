@@ -79,7 +79,33 @@ npm install
 npm run dev
 ```
 
+## 添加Docker部署
 
+### 1.后端
+
+进入backend目录，运行
+
+```shell
+# 打docker镜像
+docker build -t webssh_backend .
+# 运行后端Docker
+docker run -d -p 8000:8000 -p 8001:8001 --name webssh_backend webssh_backend
+```
+
+### 2.前端
+
+将frontend目录打开，全局搜索webssh_backend,替换成后端服务器的IP地址
+
+然后再frontend目录下运行
+
+```shell
+docker build -t webssh_frontend .
+docker run -d -p 8080:80 --name webssh_frontend webssh_frontend
+```
+
+### 3.完成
+
+上面两步做完之后就部署成功了
 
 
 

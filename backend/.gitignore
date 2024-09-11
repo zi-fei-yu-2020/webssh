@@ -1,0 +1,14 @@
+# 忽略数据库文件
+db.sqlite3
+
+# 忽略logs本地的日志
+logs/*
+
+# 建议忽略 Python 相关文件
+__pycache__/
+*.pyc
+*.pyo
+
+# 忽略环境配置文件（如虚拟环境）
+.env
+venv/

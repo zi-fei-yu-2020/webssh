@@ -38,20 +38,20 @@
             <el-table-column prop="typename" label="验证方式"></el-table-column>
             <el-table-column prop="username" label="用户名"></el-table-column>
             <el-table-column prop="created_time" label="创建时间"></el-table-column>
-            <el-table-column label="操作" fixed="right" width="260">
+            <el-table-column label="操作" fixed="right" width="170">
                 <template #header>
                     <div style="display: flex;justify-content: space-between;align-items: center;">
                         <div>操作</div>
                     </div>
                 </template>
                 <template #default="scope">
-                    <el-button size="mini" type="danger" @click="opencontent(scope.row)">
+                    <el-button size="mini" type="text" @click="opencontent(scope.row)">
                         打开终端
                     </el-button>
-                    <el-button size="mini" type="danger" @click="openUpdateDialog(scope.row)">
+                    <el-button size="mini" type="text" @click="openUpdateDialog(scope.row)">
                         编辑
                     </el-button>
-                    <el-button size="mini" type="danger" @click="showRejectDelete(scope.row.id)">
+                    <el-button size="mini" type="text" @click="showRejectDelete(scope.row.id)">
                         删除
                     </el-button>
                 </template>
