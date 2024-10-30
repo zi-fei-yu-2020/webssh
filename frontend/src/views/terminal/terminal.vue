@@ -96,7 +96,7 @@
       :title="formData.id ? '编辑终端' : '新增终端'"
       v-model="DialogVisible"
       :close-on-click-modal="false"
-      :style="{ '--el-dialog-width': '50%' }"
+      :style="{ maxWidth: '600px', width: '80%' }"
     >
       <el-form
         :model="formData"
