@@ -67,6 +67,8 @@ daphne -p 8001 backend.asgi:application
 
 ## 前端运行：
 
+### 0.将frontend中所有webssh_backend都替换为后端地址
+
 ### 1.安装依赖
 
 ```shell

@@ -4,6 +4,6 @@ export const config = {
         apiBaseUrl: 'http://127.0.0.1:8000/api'
     },
     production: {
-        apiBaseUrl: 'http://webssh_backend:8000/api'
+        apiBaseUrl: 'http://159.75.69.201:8000/api'
     }
 };
